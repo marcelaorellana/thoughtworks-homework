@@ -1,17 +1,32 @@
+*{
+	padding: 0;
+	margin: 0;
+}
+h1, h2, h3, h4, h5, h6{
+	padding: 0;
+	margin: 0;
+}
+i{
+	padding: 0;
+	margin: 0;
+}
 body{
-	background-color: pink;
+	background-color: white;
+}
+h1.title{
+	font-size: 3em;
 }
 .tabs .tab a{
-	
+	color: #3F3E3E;
 }
 .tabs .tab a:hover, .tabs .tab a.active{
- 	background-color: white;
+ 	background-color: pink;
 }
 .tabs .tab{
 	margin: 10px;
-	background-color: lightblue;
 	border-top-right-radius: 10px;
 	border-top-left-radius: 10px;
+	border: 2px solid pink;
 	
 }
 .tabs .indicator {
@@ -19,4 +34,62 @@ body{
 }
 .tabs{
 	height: 55px;
+}
+.agents{
+	display: flex;
+	flex-direction: row;
+	align-items: center;
+	background-color: pink;
+	height: 70px;
+	.agents-title{
+		margin: 0 10px;
+	}
+}
+.cards{
+	.card{
+		display: flex;
+		flex-direction: row;
+		padding: 15px;
+		border-radius: 10px;
+		.circle{
+			background-color: pink;
+			height: 50px;
+			width: 50px;
+			margin: 0 10px;
+		}
+		.info{
+			width: 100%;
+			
+			.info-name{
+				display: flex;
+				flex-direction: row;
+				.info-domain{
+					margin: 0 10px;
+				}
+			}
+			.actions{
+				display: flex;
+				flex-direction: row;
+				justify-content: space-between;
+				.resources{
+					display: flex;
+					flex-direction: row;
+					.specify-resources{
+						margin: 0 10px;
+					}
+					ul{
+						display: flex;
+						flex-direction: row;
+						li{
+							margin: 0 10px;
+							i{
+								font-size: 16px;
+							}
+						}
+					}
+				}
+			}
+			
+		}
+	}
 }
