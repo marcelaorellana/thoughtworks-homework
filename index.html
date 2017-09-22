@@ -14,40 +14,87 @@
 <body>
 	<div class="row">
 		<div class="col s12">
-			<p><a href="#">Sign Up</a></p>
+			<div class="signup right-align">
+				<p>Signed in as <a href="#"><b> Member </b></a></p>
+				<p class="signout"> <i class="material-icons">exit_to_app</i><a href="#"><b>Sign Out</b></a></p>
+			</div>
 		</div>
 	</div>
 	<div class="row">
-  	<div class="col s12 m4">
+  	<div class="col s12 m5">
   		<h1 class="title">Cruise</h1>
   	</div>
-    <div class="col s12 m8">
+    <div class="col s12 m7">
       <ul class="tabs">
-        <li class="tab col s2"><a href="#test1">Test 1</a></li>
-        <li class="tab col s2"><a href="#test2">Test 2</a></li>
-        <li class="tab col s2"><a href="#test3">Test 3</a></li>
-        <li class="tab col s2"><a href="#test4">Test 4</a></li>
+        <li class="tab col s2"><a href="#test1">DASHBOARD</a></li>
+        <li class="tab col s2"><a href="#test2">MY CRUISE</a></li>
+        <li class="tab col s2"><a href="#test3">AGENTS</a></li>
+        <li class="tab col s2"><a href="#test4">HELP</a></li>
       </ul>
     </div>
-    <div id="test1" class="col s12">Test 1</div>
-    <div id="test2" class="col s12">Test 2</div>
+    <div id="test1" class="col s12">
+    	<div class="agents">
+    		<h4 class="agents-title">Dashboard</h4>
+    		<a href="#">
+    			<div class="chip">
+		    		<p>All</p>
+				</div>
+			</a>
+			<a href="#">
+				<div class="chip selected">
+		    		<p>Physical</p>
+				</div>
+			</a>
+			<a href="#">
+				<div class="chip">
+		    		<p>Virtual</p>
+				</div>
+			</a>
+    	</div>
+    </div>
+    <div id="test2" class="col s12">
+    	<div class="agents">
+    		<h4 class="agents-title">My Cruise </h4>
+    		<a href="#">
+    			<div class="chip">
+		    		<p>All</p>
+				</div>
+			</a>
+			<a href="#">
+				<div class="chip selected">
+		    		<p>Physical</p>
+				</div>
+			</a>
+			<a href="#">
+				<div class="chip">
+		    		<p>Virtual</p>
+				</div>
+			</a>
+    	</div>
+    </div>
     <div id="test3" class="col s12">
     	<div class="agents">
     		<h4 class="agents-title">Agents </h4>
-    		<div class="chip">
-		    	<p> All </p>
-			</div>
-			<div class="chip">
-		    	<p>Physical</p>
-			</div>
-			<div class="chip">
-		    	<p>Virtual</p>
-			</div>
+    		<a href="#">
+    			<div class="chip">
+		    		<p>All</p>
+				</div>
+			</a>
+			<a href="#">
+				<div class="chip selected">
+		    		<p>Physical</p>
+				</div>
+			</a>
+			<a href="#">
+				<div class="chip">
+		    		<p>Virtual</p>
+				</div>
+			</a>
     	</div>
     	<div class="row">
-    		<div class="col s12 m8">
+    		<div class="col s12 m9">
     			<div class="cards">
-    				<div class="card">
+    				<div class="card" id="card-01">
     					<div class="image">
     						<div class="circle"></div>
     					</div>
@@ -58,26 +105,133 @@
     								<a href="#" class="specify-resources"><p>+ Specify Resources</p></a>
     								<p>| Resources: </p>
     								<ul>
-    									<li><p>ubuntu<i class="material-icons">clear</i></p></li>
-    									<li>Firefox3<i class="material-icons">clear</i></li>
+    									<li><p>ubuntu <a class="clear" href="#"><i class="material-icons">clear</i></a></p></li>
+    									<li><p>Firefox3 <a class="clear" href="#"><i class="material-icons">clear</i></a></p></li>
     								</ul>
     							</div>
     							<div class="deny">
-    								<p><i class="tiny material-icons">block</i>Deny</p>
+    								<p class="deny-parag"><i class="tiny material-icons">block</i>Deny</p>
+    							</div>
+    						</div>
+    					</div>
+    				</div>
+    				<div class="card" id="card-02">
+    					<div class="image">
+    						<div class="circle"></div>
+    					</div>
+    					<div class="info">
+    						<div class="info-name"><p class="info-domain"><b>bjstdmngbgr02.thoughtworks.com </b></p> <p> | idle | 192.168.1.2 | /var/lib/cruise-agent</p> </div>
+    						<div class="actions">
+    							<div class="resources">
+    								<a href="#" class="specify-resources"><p>+ Specify Resources</p></a>
+    								<p>| Resources: </p>
+    								<ul>
+    									<li><p>ubuntu <a class="clear" href="#"><i class="material-icons">clear</i></a></p></li>
+    									<li><p>Firefox3 <a class="clear" href="#"><i class="material-icons">clear</i></a></p></li>
+    								</ul>
+    							</div>
+    							<div class="deny">
+    								
+    							</div>
+    						</div>
+    					</div>
+    				</div>
+    				<div class="card" id="card-03">
+    					<div class="image">
+    						<div class="circle"></div>
+    					</div>
+    					<div class="info">
+    						<div class="info-name"><p class="info-domain"><b>bjstdmngbgr02.thoughtworks.com </b></p> <p> | idle | 192.168.1.2 | /var/lib/cruise-agent</p> </div>
+    						<div class="actions">
+    							<div class="resources">
+    								<a href="#" class="specify-resources"><p>+ Specify Resources</p></a>
+    								<p>| Resources: </p>
+    								<ul>
+    									<li><p>ubuntu <a class="clear" href="#"><i class="material-icons">clear</i></a></p></li>
+    									<li><p>Firefox3 <a class="clear" href="#"><i class="material-icons">clear</i></a></p></li>
+    								</ul>
+    							</div>
+    							<div class="deny">
+    								
+    							</div>
+    						</div>
+    					</div>
+    				</div>
+    				<div class="card" id="card-04">
+    					<div class="image">
+    						<div class="circle"></div>
+    					</div>
+    					<div class="info">
+    						<div class="info-name"><p class="info-domain"><b>bjstdmngbgr02.thoughtworks.com </b></p> <p> | idle | 192.168.1.2 | /var/lib/cruise-agent</p> </div>
+    						<div class="actions">
+    							<div class="resources">
+    								<a href="#" class="specify-resources"><p>+ Specify Resources</p></a>
+    								<p>| Resources: </p>
+    								<ul>
+    									<li><p>ubuntu <a class="clear" href="#"><i class="material-icons">clear</i></a></p></li>
+    									<li><p>Firefox3 <a class="clear" href="#"><i class="material-icons">clear</i></a></p></li>
+    								</ul>
+    							</div>
+    							<div class="deny">
+    								<p class="deny-parag"><i class="tiny material-icons">block</i>Deny</p>
     							</div>
     						</div>
     					</div>
     				</div>
     			</div>
     		</div>
-    		<div class="col s12 m4">
-    			<div class="summary">
-    				
+    		<div class="col s12 m3">
+    			<div class="right-space">
+    				<h5>Summary</h5>
+    				<div class="gray-line"></div>
+    				<table>
+						<tbody>
+							<tr>
+								<td>Building</td>
+								<td>2</td>
+							</tr>
+							<tr>
+								<td>Idle</td>
+								<td>2</td>
+							</tr>
+						</tbody>
+      				</table>
+      				<h5>History</h5>
+            		<div class="gray-line"></div>
+            		<div class="history-items">
+            			<p>bjstdmngbgr02/Acceptance_test</p>
+	            		<p>bjstdmngbgr02/Acceptance_test</p>
+	            		<p>bjstdmngbgr02/Acceptance_test</p>
+	            		<p>bjstdmngbgr02/Acceptance_test</p>
+	            		<p>bjstdmngbgr02/Acceptance_test</p>
+	            		<p>bjstdmngbgr02/Acceptance_test</p>
+	            		<p>bjstdmngbgr02/Acceptance_test</p>
+	            		<p>bjstdmngbgr02/Acceptance_test</p>
+            		</div>
     			</div>
     		</div>
     	</div>
     </div>
-    <div id="test4" class="col s12">Test 4</div>
+    <div id="test4" class="col s12">
+    	<div class="agents">
+    		<h4 class="agents-title">Help</h4>
+    		<a href="#">
+    			<div class="chip">
+		    		<p>All</p>
+				</div>
+			</a>
+			<a href="#">
+				<div class="chip selected">
+		    		<p>Physical</p>
+				</div>
+			</a>
+			<a href="#">
+				<div class="chip">
+		    		<p>Virtual</p>
+				</div>
+			</a>
+    	</div>
+    </div>
 	</div>     
 </body>
 

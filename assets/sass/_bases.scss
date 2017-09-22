@@ -1,48 +1,73 @@
-*{
-	padding: 0;
-	margin: 0;
-}
-h1, h2, h3, h4, h5, h6{
-	padding: 0;
-	margin: 0;
-}
-i{
+*, h1, h2, h3, h4, h5, h6, i, p{
 	padding: 0;
 	margin: 0;
 }
 body{
 	background-color: white;
+	width: 90%;
+	margin: 0 auto;
+}
+.signup{
+	display: flex;
+	flex-direction: row;
+	justify-content: flex-end;
+	p{
+		display: flex;
+		flex-direction: row;
+		align-items: center;
+		margin-left: 10px;
+		a{
+			margin-left: 2px;
+			color: $dark;
+		}
+	}
 }
 h1.title{
 	font-size: 3em;
+	font-weight: bold;
 }
 .tabs .tab a{
 	color: #3F3E3E;
 }
 .tabs .tab a:hover, .tabs .tab a.active{
- 	background-color: pink;
+ 	background-color: $blue;
+ 	color: white;
 }
 .tabs .tab{
 	margin: 10px;
 	border-top-right-radius: 10px;
 	border-top-left-radius: 10px;
-	border: 2px solid pink;
+	border: 2px solid $blue;
+	font-weight: bold;
+
 	
 }
 .tabs .indicator {
     background-color: transparent;
 }
 .tabs{
-	height: 55px;
+	height: 50px;
 }
 .agents{
 	display: flex;
 	flex-direction: row;
 	align-items: center;
-	background-color: pink;
-	height: 70px;
+	background-color: $blue;
+	height: 60px;
 	.agents-title{
 		margin: 0 10px;
+	}
+	.btn{
+		border-radius: 50px;
+		margin: 0 5px;
+	}
+	.chip{
+		width: 80px;
+		text-align: center;
+		background-color: $gray;
+	}
+	.chip.selected{
+		background-color: $light;
 	}
 }
 .cards{
@@ -52,7 +77,7 @@ h1.title{
 		padding: 15px;
 		border-radius: 10px;
 		.circle{
-			background-color: pink;
+			background-color: $gray;
 			height: 50px;
 			width: 50px;
 			margin: 0 10px;
@@ -63,33 +88,81 @@ h1.title{
 			.info-name{
 				display: flex;
 				flex-direction: row;
+				flex-wrap: wrap;
+				p{
+					font-size: 16px;
+				}
 				.info-domain{
-					margin: 0 10px;
+					margin-right: 10px;
 				}
 			}
 			.actions{
 				display: flex;
 				flex-direction: row;
 				justify-content: space-between;
+				flex-wrap: wrap;
 				.resources{
 					display: flex;
 					flex-direction: row;
+					flex-wrap: wrap;
 					.specify-resources{
-						margin: 0 10px;
+						margin-right: 10px;
 					}
 					ul{
 						display: flex;
 						flex-direction: row;
 						li{
 							margin: 0 10px;
+							p{
+								font-size: 14px;
+								display: flex;
+								flex-direction: row;
+								align-items: center;
+								a{
+									display: flex;
+									flex-direction: row;
+									align-items: center;
+									color: $dark;
+								}
+							}
 							i{
-								font-size: 16px;
+								font-size: 14px;
+								border: 1px solid $dark;
+								border-radius: 5px;
+								
 							}
 						}
+					}
+				}
+				.deny{
+					.deny-parag{
+						display: flex;
+						flex-direction: row;
+						align-items: center;
 					}
 				}
 			}
 			
 		}
+	}
+}
+#card-01, #card-04{
+	background-color: $green;
+}
+#card-02, #card-03{
+	background-color: $orange;
+}
+
+.right-space{
+	h5{
+		margin: 5px 0;
+	}
+	.gray-line{
+		height: 2px;
+		background-color: $gray;
+		width: 100%;
+	}
+	.history-items p{
+		margin: 8px;
 	}
 }
