@@ -32,6 +32,7 @@
         <li class="tab col s2"><a href="#test4">HELP</a></li>
       </ul>
     </div>
+
     <div id="test1" class="col s12">
     	<div class="agents">
     		<h4 class="agents-title">Dashboard</h4>
@@ -51,6 +52,12 @@
 				</div>
 			</a>
     	</div>
+    	<ul id="dropdown2" class="dropdown-content">
+			<li><a href="#">Ustawienia</a></li>
+			<li><a href="#">Panel administratora</a></li>
+		</ul>
+
+
     </div>
     <div id="test2" class="col s12">
     	<div class="agents">
@@ -71,7 +78,16 @@
 				</div>
 			</a>
     	</div>
+    	<div class="addresources" id="add-r-a">
+			<p>(Saparate multiple resources name with commas)</p>
+			<input type="text" class="add-input" id="add-i-a">
+			<div class="buttons-add">
+				<a class="waves-effect waves-light btn btn-small add-button1">Add Resources</a>
+				<a class="waves-effect waves-light btn btn-small">Close</a>
+			</div>
+		</div>
     </div>
+
     <div id="test3" class="col s12">
     	<div class="agents">
     		<h4 class="agents-title">Agents </h4>
@@ -94,88 +110,100 @@
     	<div class="row">
     		<div class="col s12 m9">
     			<div class="cards">
+
     				<div class="card" id="card-01">
-    					<div class="image">
-    						<div class="circle"></div>
-    					</div>
-    					<div class="info">
-    						<div class="info-name"><p class="info-domain"><b>bjstdmngbgr02.thoughtworks.com </b></p> <p> | idle | 192.168.1.2 | /var/lib/cruise-agent</p> </div>
-    						<div class="actions">
-    							<div class="resources">
-    								<a href="#" class="specify-resources"><p>+ Specify Resources</p></a>
-    								<p>| Resources: </p>
-    								<ul>
-    									<li><p>ubuntu <a class="clear" href="#"><i class="material-icons">clear</i></a></p></li>
-    									<li><p>Firefox3 <a class="clear" href="#"><i class="material-icons">clear</i></a></p></li>
-    								</ul>
-    							</div>
-    							<div class="deny">
-    								<p class="deny-parag"><i class="tiny material-icons">block</i>Deny</p>
-    							</div>
-    						</div>
+    					<div class="img-info">
+	    					<div class="image">
+	    						<div class="circle"></div>
+	    					</div>
+	    					<div class="info">
+	    						<div class="info-name"><p class="info-domain"><b>bjstdmngbgr02.thoughtworks.com </b></p> <p> | idle | 192.168.1.2 | /var/lib/cruise-agent</p> </div>
+	    						<div class="actions">
+	    							<div class="resources">
+	    								<a href="#" class="specify-resources" id="specify-resources-1"><p>+ Specify Resources</p></a>
+	    								<ul class="list-res">
+	    									<li><p> | Resources: </p></li>
+	    									<li><p>ubuntu <a class="clear" href="#"><i class="material-icons">clear</i></a></p></li>
+	    									<li><p>Firefox3 <a class="clear" href="#"><i class="material-icons">clear</i></a></p></li>
+	    								</ul>
+	    							</div>
+	    							
+	    							<div class="deny">
+	    								<p class="deny-parag"><i class="tiny material-icons">block</i>Deny</p>
+	    							</div>
+	    						</div>
+	    					</div>
     					</div>
     				</div>
+    				
     				<div class="card" id="card-02">
-    					<div class="image">
-    						<div class="circle"></div>
-    					</div>
-    					<div class="info">
-    						<div class="info-name"><p class="info-domain"><b>bjstdmngbgr02.thoughtworks.com </b></p> <p> | idle | 192.168.1.2 | /var/lib/cruise-agent</p> </div>
-    						<div class="actions">
-    							<div class="resources">
-    								<a href="#" class="specify-resources"><p>+ Specify Resources</p></a>
-    								<p>| Resources: </p>
-    								<ul>
-    									<li><p>ubuntu <a class="clear" href="#"><i class="material-icons">clear</i></a></p></li>
-    									<li><p>Firefox3 <a class="clear" href="#"><i class="material-icons">clear</i></a></p></li>
-    								</ul>
-    							</div>
-    							<div class="deny">
-    								
-    							</div>
-    						</div>
+    					<div class="img-info">
+	    					<div class="image">
+	    						<div class="circle"></div>
+	    					</div>
+	    					<div class="info">
+	    						<div class="info-name"><p class="info-domain"><b>bjstdmngbgr02.thoughtworks.com </b></p> <p> | idle | 192.168.1.2 | /var/lib/cruise-agent</p> </div>
+	    						<div class="actions">
+	    							<div class="resources">
+	    								<a href="#" class="specify-resources" id="specify-resources-1"><p>+ Specify Resources</p></a>
+	    								<ul class="list-res">
+	    									<li><p> | Resources: </p></li>
+	    									<li><p>ubuntu <a class="clear" href="#"><i class="material-icons">clear</i></a></p></li>
+	    									<li><p>Firefox3 <a class="clear" href="#"><i class="material-icons">clear</i></a></p></li>
+	    								</ul>
+	    							</div>
+	    							
+	    							<div class="deny">
+	    								
+	    							</div>
+	    						</div>
+	    					</div>
     					</div>
     				</div>
     				<div class="card" id="card-03">
-    					<div class="image">
-    						<div class="circle"></div>
-    					</div>
-    					<div class="info">
-    						<div class="info-name"><p class="info-domain"><b>bjstdmngbgr02.thoughtworks.com </b></p> <p> | idle | 192.168.1.2 | /var/lib/cruise-agent</p> </div>
-    						<div class="actions">
-    							<div class="resources">
-    								<a href="#" class="specify-resources"><p>+ Specify Resources</p></a>
-    								<p>| Resources: </p>
-    								<ul>
-    									<li><p>ubuntu <a class="clear" href="#"><i class="material-icons">clear</i></a></p></li>
-    									<li><p>Firefox3 <a class="clear" href="#"><i class="material-icons">clear</i></a></p></li>
-    								</ul>
-    							</div>
-    							<div class="deny">
-    								
-    							</div>
-    						</div>
+    					<div class="img-info">
+	    					<div class="image">
+	    						<div class="circle"></div>
+	    					</div>
+	    					<div class="info">
+	    						<div class="info-name"><p class="info-domain"><b>bjstdmngbgr02.thoughtworks.com </b></p> <p> | idle | 192.168.1.2 | /var/lib/cruise-agent</p> </div>
+	    						<div class="actions">
+	    							<div class="resources">
+	    								<a href="#" class="specify-resources" id="specify-resources-1"><p>+ Specify Resources</p></a>
+	    								<ul class="list-res">
+	    									<li><p> | Resources: </p></li>
+	    									<li><p>ubuntu <a class="clear" href="#"><i class="material-icons">clear</i></a></p></li>
+	    									<li><p>Firefox3 <a class="clear" href="#"><i class="material-icons">clear</i></a></p></li>
+	    								</ul>
+	    							</div>
+	    							<div class="deny">
+	    								
+	    							</div>
+	    						</div>
+	    					</div>
     					</div>
     				</div>
     				<div class="card" id="card-04">
-    					<div class="image">
-    						<div class="circle"></div>
-    					</div>
-    					<div class="info">
-    						<div class="info-name"><p class="info-domain"><b>bjstdmngbgr02.thoughtworks.com </b></p> <p> | idle | 192.168.1.2 | /var/lib/cruise-agent</p> </div>
-    						<div class="actions">
-    							<div class="resources">
-    								<a href="#" class="specify-resources"><p>+ Specify Resources</p></a>
-    								<p>| Resources: </p>
-    								<ul>
-    									<li><p>ubuntu <a class="clear" href="#"><i class="material-icons">clear</i></a></p></li>
-    									<li><p>Firefox3 <a class="clear" href="#"><i class="material-icons">clear</i></a></p></li>
-    								</ul>
-    							</div>
-    							<div class="deny">
-    								<p class="deny-parag"><i class="tiny material-icons">block</i>Deny</p>
-    							</div>
-    						</div>
+    					<div class="img-info">
+	    					<div class="image">
+	    						<div class="circle"></div>
+	    					</div>
+	    					<div class="info">
+	    						<div class="info-name"><p class="info-domain"><b>bjstdmngbgr02.thoughtworks.com </b></p> <p> | idle | 192.168.1.2 | /var/lib/cruise-agent</p> </div>
+	    						<div class="actions">
+	    							<div class="resources">
+	    								<a href="#" class="specify-resources" id="specify-resources-1"><p>+ Specify Resources</p></a>
+	    								<ul class="list-res">
+	    									<li><p> | Resources: </p></li>
+	    									<li><p>ubuntu <a class="clear" href="#"><i class="material-icons">clear</i></a></p></li>
+	    									<li><p>Firefox3 <a class="clear" href="#"><i class="material-icons">clear</i></a></p></li>
+	    								</ul>
+	    							</div>
+	    							<div class="deny">
+	    								<p class="deny-parag"><i class="tiny material-icons">block</i>Deny</p>
+	    							</div>
+	    						</div>
+	    					</div>
     					</div>
     				</div>
     			</div>
