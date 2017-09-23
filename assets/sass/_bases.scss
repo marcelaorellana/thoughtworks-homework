@@ -23,11 +23,11 @@ body{
 	}
 }
 h1.title{
-	font-size: 3em;
+	font-size: 3.5em;
 	font-weight: bold;
 }
 .tabs .tab a{
-	color: #3F3E3E;
+	color: $dark;
 }
 .tabs .tab a:hover, .tabs .tab a.active{
  	background-color: $blue;
@@ -56,6 +56,7 @@ h1.title{
 	height: 60px;
 	.agents-title{
 		margin: 0 10px;
+		color: white;
 	}
 	.btn{
 		border-radius: 50px;
@@ -65,6 +66,7 @@ h1.title{
 		width: 80px;
 		text-align: center;
 		background-color: $gray;
+		margin: 0 3px;
 	}
 	.chip.selected{
 		background-color: $light;
@@ -76,14 +78,38 @@ h1.title{
 		padding: 15px;
 	}
 	.add-resources{
+		width: 60%;
+		margin-left: 65px;
+		background-color: white;
+		padding: 10px;
+		border-radius: 10px;
+		.btn{
+			background-color: $blue;
+		}
+		.btn:hover {
+			background-color: $blue;
+		}
+		.btn:focus{ 
+			background-color: $blue;
+		}
 		.btn-small {
 		    height: 26px;
 		    line-height: 24px;
 		    padding: 0 0.5rem;
 		    border-radius: 10px;
+		    margin-right: 5px;
 		}
 		input{
 			height: 20px;
+		}
+		 /* label focus color */
+		input[type=text]:focus + label {
+			color: $gray;
+		}
+		/* label underline focus color */
+		input[type=text]:focus {
+			border-bottom: 1px solid $gray;
+			box-shadow: 0 1px 0 0 $gray;
 		}
 	}
 	
@@ -122,13 +148,14 @@ h1.title{
 					flex-direction: row;
 					flex-wrap: wrap;
 					.specify-resources{
-						margin-right: 10px;
+						margin-right: 5px;
 					}
 					ul{
 						display: flex;
 						flex-direction: row;
+						flex-wrap: wrap;
 						li{
-							margin: 0 10px;
+							margin: 0 5px;
 							p{
 								font-size: 14px;
 								display: flex;
@@ -167,7 +194,7 @@ h1.title{
 	background-color: $green;
 }
 #card-02, #card-03{
-	background-color: $orange;
+	background-color: $yellow;
 }
 
 .right-space{
@@ -176,7 +203,7 @@ h1.title{
 	}
 	.gray-line{
 		height: 2px;
-		background-color: $gray;
+		background-color: $blue;
 		width: 100%;
 	}
 	.history-items p{
